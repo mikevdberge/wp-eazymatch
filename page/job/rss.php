@@ -287,9 +287,9 @@ class emol_page_job_rss extends emol_pagedummy {
 		foreach ( $jobs as $job ) {
 
 			$jobUrl = emol_get_job_url( $job );
-			if ( $fullJob['startdate'] == null ) {
-				$fullJob['startdate'] = date( 'Ymd' );
-			}
+			//if ( $fullJob['startdate'] == null ) {
+			//	$fullJob['startdate'] = date( 'Ymd' );
+			//}
 			$tiny = $this->get_tiny_url( $jobUrl );
 
 			$items .= '<item>' . PHP_EOL;
